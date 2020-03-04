@@ -10,7 +10,7 @@ def gross_for_director(director_data)
           director_x = 0
           while director_x < director_data[:movies].length do
             dire_gross += director_data[:movies][director_x][:worldwide_gross]
-
+                        # Why don't I need a row parameter to dig into this NDS
             director_x += 1
           end
   # End of refactor gross_for_director
