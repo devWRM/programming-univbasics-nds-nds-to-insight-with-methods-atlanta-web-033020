@@ -15,7 +15,7 @@ def gross_for_director(director_data)
             director_x += 1
           end
   # End of refactor gross_for_director
-          
+
           dire_gross
 end
 
