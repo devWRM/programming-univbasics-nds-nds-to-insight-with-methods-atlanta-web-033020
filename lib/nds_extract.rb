@@ -3,14 +3,13 @@ require 'directors_database'
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
-def gross_for_director(director_data)
-
+def gross_for_director(director_data, row)
 
   # Refactor into gross_for_director
           dire_gross = 0
           director_x = 0
-          while director_x < director_data[0][:movies].length do
-            dire_gross += director_data[0][:movies][director_x][:worldwide_gross]
+          while director_x < director_data[row][:movies].length do
+            dire_gross += director_data[row][:movies][director_x][:worldwide_gross]
 
             director_x += 1
           end
