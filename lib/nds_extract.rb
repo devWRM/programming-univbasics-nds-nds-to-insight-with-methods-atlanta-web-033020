@@ -5,6 +5,16 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
 
+
+  # Refactor into gross_for_director
+          i_row = 0
+          while i_row < directors[row][:movies].length do
+            total = total + directors[row][:movies][i_row][:worldwide_gross]
+
+            i_row += 1
+          end
+# End of refactor gross_for_director
+
 end
 
 # Write a method that, given an NDS creates a new Hash
