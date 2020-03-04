@@ -7,11 +7,12 @@ def gross_for_director(director_data)
 
 
   # Refactor into gross_for_director
-          i_row = 0
-          while i_row < directors[row][:movies].length do
-            total = total + directors[row][:movies][i_row][:worldwide_gross]
+          dire_gross = 0
+          director_x = 0
+          while director_x < director_data[row][:movies].length do
+            dire_gross += director_data[row][:movies][director_x][:worldwide_gross]
 
-            i_row += 1
+            director_x += 1
           end
 # End of refactor gross_for_director
 
