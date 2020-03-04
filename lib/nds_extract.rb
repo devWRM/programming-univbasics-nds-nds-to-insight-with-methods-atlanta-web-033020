@@ -32,12 +32,9 @@ def directors_totals(nds)
             total +=  gross_for_director(inner_len)
             result[inner_len[:name]] = total
 
-            row += 1      
+            row += 1
           end
 
   nil
   result
 end
-
-
-
